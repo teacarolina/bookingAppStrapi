@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bookings-open-auths",
+      "handler": "bookings-open-auth.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bookings-open-auths/count",
+      "handler": "bookings-open-auth.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bookings-open-auths/:id",
+      "handler": "bookings-open-auth.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bookings-open-auths",
+      "handler": "bookings-open-auth.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bookings-open-auths/:id",
+      "handler": "bookings-open-auth.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bookings-open-auths/:id",
+      "handler": "bookings-open-auth.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "open_auths",
+  "info": {
+    "name": "OpenAuth",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "name": {
+      "type": "string"
+    },
+    "userID": {
+      "type": "text"
+    },
+    "bookingsOpen": {
+      "via": "userId",
+      "collection": "bookings-open-auth"
+    }
+  }
+}

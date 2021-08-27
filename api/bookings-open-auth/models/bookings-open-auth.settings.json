@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings_open_auths",
+  "info": {
+    "name": "BookingsOpenAuth",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "telephone": {
+      "type": "biginteger"
+    },
+    "productId": {
+      "model": "product",
+      "via": "bookings_open_auths"
+    },
+    "userId": {
+      "model": "open-auth",
+      "via": "bookingsOpen"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/open-auths",
+      "handler": "open-auth.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/open-auths/count",
+      "handler": "open-auth.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/open-auths/:id",
+      "handler": "open-auth.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/open-auths",
+      "handler": "open-auth.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/open-auths/:id",
+      "handler": "open-auth.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/open-auths/:id",
+      "handler": "open-auth.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

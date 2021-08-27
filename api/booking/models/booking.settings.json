@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "name": "Booking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "telephone": {
+      "type": "biginteger"
+    },
+    "productId": {
+      "model": "product",
+      "via": "bookingId"
+    },
+    "userId": {
+      "via": "bookingId",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
